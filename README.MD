@@ -123,7 +123,7 @@ def register():
         # Hash the plain password before adding to DB
         password = werkzeug.security.generate_password_hash(password, method='pbkdf2:sha256', salt_length=8)
 ```
-> Check password hash
+#### Check password hash
 > 
 > Method- check_password_hash(hashpw_from_db, password_from_form)
 ```
